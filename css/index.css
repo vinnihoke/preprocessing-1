@@ -147,12 +147,13 @@ a {
   font-size: 1.2rem;
 }
 button {
-  background-color: darkslategray;
+  background-color: #aa0000;
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
   transition: 1s;
   font-size: 1.1rem;
+  cursor: pointer;
 }
 button:hover {
   background-color: grey;
@@ -167,10 +168,12 @@ h1 {
 h2 {
   font-size: 2rem;
   font-weight: 700;
+  color: darkslategrey;
 }
 h3 {
   font-size: 1.3rem;
   font-weight: 700;
+  color: gold;
 }
 h4 {
   font-size: 1.3rem;
@@ -224,6 +227,30 @@ header nav {
     width: 950px;
     height: 100%;
   }
+}
+#contact {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: lightcoral;
+}
+#contact #contact-form {
+  height: 250px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+footer {
+  height: 100px;
+  width: 100%;
+  color: white;
+  background-color: darkslategrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hero {
   width: 100%;
@@ -311,14 +338,4 @@ header nav {
 .section-two td {
   text-align: left;
   padding: 15px 10px;
-}
-footer {
-  height: 100px;
-  width: 100%;
-  color: white;
-  background-color: darkslategrey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px 0px;
 }
