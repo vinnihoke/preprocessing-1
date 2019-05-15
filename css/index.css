@@ -190,14 +190,40 @@ header {
   height: 75px;
   padding: 0px 25px;
 }
+@media (min-width: 768px) {
+  header {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 950px) {
+  header {
+    justify-content: flex-end;
+  }
+}
 header nav {
   display: flex;
   width: 100%;
   justify-content: space-around;
 }
+@media (min-width: 768px) {
+  header nav {
+    width: 40%;
+  }
+}
+@media (min-width: 950px) {
+  header nav {
+    width: 40%;
+  }
+}
 .container {
   width: 95%;
   height: 100%;
+}
+@media (min-width: 950px) {
+  .container {
+    width: 950px;
+    height: 100%;
+  }
 }
 .hero {
   width: 100%;
@@ -220,6 +246,15 @@ header nav {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .section-one {
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+  }
 }
 .section-one .section-one-content {
   display: flex;
@@ -228,7 +263,18 @@ header nav {
   width: 100%;
   margin: 30px 0px;
 }
+@media (min-width: 768px) {
+  .section-one .section-one-content {
+    display: flex;
+    flex-flow: column;
+    width: 48%;
+    margin: 30px 0px;
+  }
+}
 .section-one .section-one-content h2 {
+  margin: 10px 0px;
+}
+.section-one h2 {
   margin: 10px 0px;
 }
 .section-one table {
